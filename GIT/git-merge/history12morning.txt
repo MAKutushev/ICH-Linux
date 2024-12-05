@@ -1,0 +1,21 @@
+  148  git clone git@github.com:MAKutushev/git-merge.git
+  149  ls
+  150  cd git-merge/
+  151  git checkout -b feature
+  152  git branch
+  153  ls
+  154  ls -l
+  155  echo "Hello World" >> README.md
+  156  echo "Hello World" >> .gitignore
+  157  git status
+  158  git add . 
+  159  git status
+  160  git commit -m "punkt 3"
+  161  git push -u origin feature
+  162  git commit --amend -m "punkt 3 ammend"
+  163  git status
+  164  git push -u origin feature
+  165  git push --force
+  166  git checkout main
+  167  git merge feature
+  168  history | tail -n 21 >> history12morning.txt
