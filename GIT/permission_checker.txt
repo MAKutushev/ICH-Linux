@@ -1,0 +1,15 @@
+#!/bin/bash
+#
+DIR="/opt/090924-wdm"
+
+for file in "$DIR"/*.sh; do
+ if [ -f "$file" ]; then
+  chmod +x "$file"
+  echo "permission added for: $file"
+ else
+  echo "file for adding permisson in $DIR not found!"
+ fi
+done
+
+
+s pomoshyu Chat GPT
